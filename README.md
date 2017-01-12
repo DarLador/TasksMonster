@@ -4,7 +4,7 @@ On Aug 2015 "she codes;" launched "she codes; Academy" - free-of-charge Web and 
 
 TasksMonster is a computer app which sends weekly tasks via email in accordance to the personal progress. TasksMonster also monitors student progress &amp; attendance and more. It was created for "she codes;" WIS branch on Aug 7, 2015 and used by both students and managers. TasksMonster was used until the AttendanceManagerMonster was released. 
 
-TasksMonster and AttendanceManagerMonster applications were the source of inspiration for shecodesconnect.com - implementation of this platform at national level.
+TasksMonster and AttendanceManagerMonster applications were the source of inspiration for [shecodesconnect.com](https://shecodesconnect.com/) - implementation of this platform at national level.
 
 ## The application
 TasksMonster application was built in Anaconda Python 2.7 on windows. 
