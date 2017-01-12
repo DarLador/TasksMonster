@@ -8,7 +8,7 @@ TasksMonster and AttendanceManagerMonster applications were the source of inspir
 
 ## The application
 TasksMonster application was built in Anaconda Python 2.7 on windows. 
-As soon as time permits I will upload a new version with related files so that the software will work on any PC.
+As soon as time permits I will upload a new version with related files so that the application will work on any PC.
 
 ## Snapshots
 Students' screen
