@@ -9,3 +9,16 @@ TasksMonster and AttendanceManagerMonster applications were the source of inspir
 ## The application
 TasksMonster application was built in Anaconda Python 2.7 on windows. 
 As soon as time permits I will upload a new version with related files so that the software will work on any PC.
+
+## Snapshots
+Students' screen
+![](https://cloud.githubusercontent.com/assets/17408143/21891200/1c5d8e02-d8da-11e6-97f2-2483942371c2.png)
+
+Students' screen -- attendance register
+![](https://cloud.githubusercontent.com/assets/17408143/21891230/4705ef32-d8da-11e6-9e0a-63c74f63885f.png)
+
+Students' screen -- attendance register & get tasks
+![](https://cloud.githubusercontent.com/assets/17408143/21891223/3e546eb8-d8da-11e6-9238-8022f6027496.png)
+
+Managers' screen
+![](https://cloud.githubusercontent.com/assets/17408143/21891459/839dce1e-d8db-11e6-91c4-62c6da17c2de.PNG)

@@ -72,19 +72,19 @@ class Attend():
         self.w = read_excel(os.path.join(self.my_path,'track_contacts.xlsx'),
                             sheetname = 'tracks', header = 0) if not debug else \
                 read_excel(os.path.join(my_path,'track_contacts.xlsx'), sheetname = 'try1', header = 0)
-        self.tracks = read_pickle(os.path.join(self.my_path,'shecodes_academy.dat'))
+        self.tracks = read_pickle(os.path.join(self.my_path,'shecodes_academy27.dat'))
         try:
-            self.attendance = read_pickle(os.path.join(self.my_path,'LessonState.dat')) if not debug else \
+            self.attendance = read_pickle(os.path.join(self.my_path,'LessonState27.dat')) if not debug else \
                                 self.attdebug()
         except (IOError, ValueError):
             self.attendance = read_excel(os.path.join(self.my_path,'LessonState.xlsx'),
                                          sheetname = 'Sheet1', header = 0)
-            self.attendance.to_pickle(os.path.join(self.my_path,'LessonState.dat'))
+            self.attendance.to_pickle(os.path.join(self.my_path,'LessonState27.dat'))
             print('LessonState file was probably changed. Changes were saved.')
             print('')
         self.today = datetime.now().strftime('%d/%m/%Y') 
         try: 
-            self.attlist = read_pickle(os.path.join(self.my_path,'attlist.dat'))
+            self.attlist = read_pickle(os.path.join(self.my_path,'attlist27.dat'))
             if self.today not in self.attlist.columns:
                 if not members_update:
                     self.attlist[self.today] = np.nan
@@ -97,7 +97,7 @@ class Attend():
         except IOError:
             pass
         try:
-            self.insp_mem = read_pickle(os.path.join(self.my_path,'inspected_mem.dat'))
+            self.insp_mem = read_pickle(os.path.join(self.my_path,'inspected_mem27.dat'))
             self.insp_mem = list(self.insp_mem)
         except IOError:
             self.insp_mem = []
@@ -253,12 +253,12 @@ class Attend():
         #==================================
         if (self.name not in self.attendance.index) and ((self.name!='quit') or (self.name!='q')):
             print('\nWe are sorry... :( \n\nYour tasks cannot be sent because we cannot find your name in our system.')
-            print('You must have been wrong in spelling your name. Be sure you are spell it correctly.')
-            print('\nIf you are sure your name is spelled right, this situation could be result of:')
-            print('(1) You are new and you are not yet registered to any track. If so:')
+            print('Make sure you entered your name correctly and then try again.')
+            print('\nIf you typed the name correctly, this error could be the result of:')
+            print('(1) You are not yet registered to study track. If so:')
             print('    a. Register in our online form. Write your full name in English')
-            print('    b. Talk with Dar or Toot so they send you your tasks for today.')
-            print('(2) You registered today but our system is out-to-date. Talk with Dar or Toot so they send you your tasks for today.')
+            print('    b. Talk with Dar or FooBar so they send you your tasks.')
+            print('(2) You registered today but our system is out-to-date. Talk with Dar or Toot so they send you your tasks.')
             print('(3) When you filled out our registration form, you accidently selected another she codes branch instead of WIS.')
             print('    Talk with Dar or Toot to check this possibility.')
             print('\n****IMPORTANT****\nIf none of the above work for you, talk with Dar or Toot')
@@ -440,7 +440,7 @@ class Attend():
                 for member in insp_members.values:
                     print member
                 print('')
-                print('In this procedure the previous file will be deleted.')
+                print('Note the previous file will be deleted.')
                 print('If you still want to inspect the attendance of the members above')
                 print('add them to the new list.\n')
                 print('Initializing list...\n')
@@ -519,11 +519,11 @@ class ConfirmRegistration():
         self.w = read_excel(os.path.join(self.my_path,'track_contacts.xlsx'),
                             sheetname = 'tracks', header = 0)
         try:
-            self.attendance = read_pickle(os.path.join(self.my_path,'LessonState.dat'))
+            self.attendance = read_pickle(os.path.join(self.my_path,'LessonState27.dat'))
         except (IOError, ValueError):
             self.attendance = read_excel(os.path.join(self.my_path,'LessonState.xlsx'),
                                          sheetname = 'Sheet1', header = 0)
-            self.attendance.to_pickle(os.path.join(self.my_path,'LessonState.dat'))
+            self.attendance.to_pickle(os.path.join(self.my_path,'LessonState27.dat'))
             print('LessonState file was probably changed. Changes were saved.')
             print('')
         self.today = datetime.now()
@@ -607,7 +607,7 @@ class ConfirmRegistration():
 #########################################################################################################################       
        
 def main():
-    my_path = 'C:/Users/me/Documents/shecodes'
+    my_path = 'C:/Users/me'
     print(shecodes)
     while 1:
         p = getpass.getpass('Password: ')
