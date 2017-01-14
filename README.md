@@ -1,14 +1,13 @@
 # TasksMonster
 ## The rationale behind it
-On Aug 2015 ["she codes;"](http://www.she-codes.org/) launched "she codes; Academy" - free-of-charge Web and Android study tracks for women without any previous programming background. The need for well designed software which automatically sends tasks and monitors the students progress arose in the very first day of "she codes; academy".
+On Aug 2015 ["she codes;"](http://www.she-codes.org/) launched the program "she codes; Academy" - free-of-charge Web and Android study courses for women without any previous programming background. The need for a well-designed software that automatically sends learning tasks and monitors the student’s progress, arose during the very first week of "she codes; academy" launch.
 
-TasksMonster is a computer app which sends weekly tasks via email in accordance to the personal progress. TasksMonster also monitors student progress &amp; attendance and more. It was created for "she codes;" WIS branch on Aug 7, 2015 and used by both students and managers. TasksMonster was used until the AttendanceManagerMonster was released. 
+*TasksMonster* is a computer app which sends weekly studying tasks via email in accordance to the student’s personal progress. *TasksMonster* also monitors student’s progress &amp; attendance and more. It was created for "she codes;" WIS branch on Aug 7, 2015 and had been used by both students and managers. *TasksMonster* had been used until the *AttendanceManagerMonster* was released.
 
-TasksMonster and AttendanceManagerMonster applications were the source of inspiration for [shecodesconnect.com](https://shecodesconnect.com/) - implementation of this platform at national level.
+*TasksMonster* and *[AttendanceManagerMonster](https://github.com/DarLador/AttendanceManagerMonster)* applications were the source of inspiration for the latter development of [shecodesconnect.com](https://shecodesconnect.com/) - which is an implementation of this platform at national level.
 
 ## The application
-TasksMonster application was built in Anaconda Python 2.7 on windows. 
-As soon as time permits I will upload a new version with related files so that the application will work on any PC.
+*TasksMonster* application was built in Anaconda Python 2.7 on windows OS. 
 
 ## Snapshots
 Students' screen
